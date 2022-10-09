@@ -2,7 +2,6 @@
 const express = require("express");
 const dotenv = require("dotenv");
 const mongoose = require("mongoose");
-const pizzas = require("./routers/pizzas");
 
 dotenv.config();
 
@@ -38,8 +37,6 @@ app.get("/echo/:input", (request, response) => {
   const message = request.params.input;
   response.status(418).json({ echo: message });
 });
-
-app.use(`/pizzas`, pizzas);
 
 const PORT = process.env.PORT || 4040; // we use || to provide a default value
 
