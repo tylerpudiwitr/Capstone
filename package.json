@@ -11,6 +11,7 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "@parcel/transformer-jsonld": "^2.7.0",
     "buffer": "^6.0.3",
     "eslint": "^6.8.0",
     "eslint-config-prettier": "^6.15.0",
