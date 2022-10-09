@@ -62,12 +62,12 @@
 }
 
 .firstsection {
-  background-color: green;
+  background-color: wheat;
   height: 400px;
 }
 
 .secondsection {
-  background-color: blue;
+  background-color: lightblue;
   height: 400px;
 }
 
@@ -94,7 +94,7 @@
 
 .secondhalf img {
   width: 70%;
-  border: 4px solid white;
+  border: 4px solid black;
   border-radius: 150px;
   display: block;
   margin: auto;
@@ -113,10 +113,10 @@
 .btn {
   padding: 8px 20px;
   margin: 7px 0;
-  border: 2px solid white;
+  border: 2px solid gray;
   border-radius: 8px;
   background: none;
-  color: white;
+  color: lightgrey;
   cursor: pointer;
 }
 
@@ -144,7 +144,7 @@
 
 .thumbnail img {
   width: 250px;
-  border: 2px solid black;
+  border: 2px solid lightblue;
   border-radius: 26px;
   margin-top: 19px;
 }
@@ -159,5 +159,5 @@
   font-family: 'Ubuntu', sans-serif;
   display: flex;
   justify-content: center;
-  color: white;
+  color: gainsboro;
 }
