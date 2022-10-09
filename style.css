@@ -1,16 +1,11 @@
 * {
+  background-color: blanchedalmond;
+
   margin: 0;
   padding: 0;
 }
 
-.navbar {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: sticky;
-  top: 0;
-  cursor: pointer;
-}
+
 
 .background {
   background: black;
@@ -49,7 +44,7 @@
   color: grey;
 }
 
-.rightnav {
+.nav {
   width: 30%;
   text-align: right;
 }
@@ -61,7 +56,7 @@
   border-radius: 9px;
 }
 
-.firstsection {
+header {
   background-color: wheat;
   height: 400px;
 }
