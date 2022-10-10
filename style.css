@@ -4,6 +4,7 @@
   margin: 5px;
   padding: 1px;
 }
+
 header {
   background-color: gray;
   height: 400px;
@@ -11,14 +12,11 @@ header {
 }
 body {
   align-items: center;
+  height: 25px;
 }
-h5 {
-  background-color: rgb(181, 239, 239);
-  align-items: flex-end;
-  padding: 30px;
-}
+
 p {
-  background-color: rgb(208, 204, 165);
+  background-color: rgb(198, 251, 255);
   padding: 60px;
   margin: 5px;
   font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
@@ -29,16 +27,29 @@ h1 {
   margin: 2px;
   padding: 70px;
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-  font-size: xx-large;
-  align-content: center;
+  color: aliceblue;
+  align-content: flex-end;
+  text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+
+}
+.header-image {
+  background-image: url("https://img.peerspace.com/image/upload/c_crop,g_custom/g_auto,c_fill,q_auto:eco,f_auto,fl_progressive:steep,w_1200,h_495/cu7tsw2wqbabdyigrq0d");
+  height: 200px;
+  width: 1350px;
+  align-self: stretch;
 }
 h3 {
   align-items: center;
-  margin: 0.5px;
-  padding: 30px;
+  margin: 6px;
+  padding: 40px;
   background-color: antiquewhite;
   font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
 }
 footer {
   padding: 10px;
+  background-color: azure;
+}
+
+div {
+  columns: 3;
 }
