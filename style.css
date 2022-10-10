@@ -16,16 +16,17 @@ body {
 }
 
 p {
-  background-color: rgb(198, 251, 255);
+  background-color: rgb(231, 218, 250);
   padding: 60px;
   margin: 5px;
+  border: 3px solid grey;
   text-align: center;
   font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
 }
 
 h1 {
-  background-color: skyblue;
   margin: 2px;
+  font-weight: bolder;
   padding: 70px;
   font-size: xx-large;
   font-stretch: expanded;
@@ -41,20 +42,20 @@ h1 {
   align-self: stretch;
 }
 h3 {
-  align-items: center;
   margin: 6px;
   padding: 40px;
+  border: 4px solid grey;
   text-align: center;
-  background-color: antiquewhite;
+  background-color: rgb(200, 214, 242);
   font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
 }
 footer {
   padding: 10px;
-  background-color: azure;
+  background-color: lightslategray;
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-  text-align: center;
+  text-align: right;
+  font-weight: bold;
 }
 
-div {
-  columns: 3;
-}
+
+
