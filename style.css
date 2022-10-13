@@ -5,12 +5,12 @@
   padding: 1px;
 }
 
-#jumbotron > h2 {
+.jumbotron > h2 {
   color: white;
   text-align: center;
 }
 
-#jumbotron > a {
+.jumbotron > a {
   text-decoration: none;
   background-color: white;
   font-size: 1.5em;
