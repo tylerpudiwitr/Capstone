@@ -1,9 +1,22 @@
 * {
   background-color: rgb(45, 45, 45);
   align-content: flex-start;
-  margin: 5px;
+  margin: 7px;
   padding: 1px;
 }
+
+/* #jumbotron > h2 {
+  color: white;
+  text-align: center;
+}
+
+#jumbotron > a {
+  text-decoration: none;
+  background-color: white;
+  font-size: 1.5em;
+  padding: 1.5rem;
+  border-radius: 10px;
+} */
 
 body {
   align-items: center;

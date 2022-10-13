@@ -77,3 +77,12 @@ router.hooks({
     }
   }
 });
+router
+  .on({
+    "/": () => render(),
+    ":view": params => {
+      let view = capitalize(params.data.view);
+      render(store[view]);
+    }
+  })
+  .resolve();
