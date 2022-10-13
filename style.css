@@ -5,7 +5,7 @@
   padding: 1px;
 }
 
-/* #jumbotron > h2 {
+#jumbotron > h2 {
   color: white;
   text-align: center;
 }
@@ -16,7 +16,7 @@
   font-size: 1.5em;
   padding: 1.5rem;
   border-radius: 10px;
-} */
+}
 
 body {
   align-items: center;
