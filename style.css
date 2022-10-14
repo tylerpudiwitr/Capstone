@@ -70,5 +70,10 @@ footer {
   font-weight: bold;
 }
 
+@media (max-width: 549px){
+  .hidden--mobile {
+    display: none !important;
+  }
+
 
 
