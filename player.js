@@ -7,6 +7,10 @@
       this.render();
     }
 
+    initializeAudio() {
+      this.AudioContext = new AudioContext();
+    }
+
     render() {
       this.shadowRoot.innerHTML = `
     <audio src="MVP.mp3" controls></audio>
@@ -17,5 +21,5 @@
     }
   }
 
-  customElements.define(`audio-player`, AudioPlayer);
+  customElements.define("audio-player", AudioPlayer);
 }

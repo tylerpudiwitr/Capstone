@@ -52,7 +52,7 @@ router.hooks({
             store.Home.weather.feelsLike = kelvinToFahrenheit(
               response.data.main.feels_like
             );
-            store.Home.weather.description = response.data.weather[0].main;
+            store.Home.weather.description = response.data.weather[1].main;
             done();
           })
           .catch(err => {
