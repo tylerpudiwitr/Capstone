@@ -1,7 +1,7 @@
-const sckey = require("soundcloud-key-fetch");
+// const sckey = require("soundcloud-key-fetch");
 
-sckey.fetchKey().then(key => {
-  console.log(key);
-});
+// sckey.fetchKey().then(key => {
+//   console.log(key);
+// });
 
-const key = sckey.fetchKey();
+// const key = sckey.fetchKey();

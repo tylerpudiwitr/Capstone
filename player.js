@@ -12,6 +12,8 @@
     <audio src="MVP.mp3" controls></audio>
     <button class="play-btn" type="button">play</button>
     `;
+
+      this.audio = this.shadowRoot.querySelector("audio");
     }
   }
 
