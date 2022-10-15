@@ -18,6 +18,17 @@
   border-radius: 10px;
 }
 
+figcaption {
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  background-color: gray;
+  columns: 3;
+  padding: 5px;
+  text-decoration: double;
+  color: antiquewhite;
+  font-variant: small-caps;
+  font-size: larger;
+}
+
 body {
   align-items: center;
   height: 25px;
@@ -30,6 +41,10 @@ p {
   border: 3px solid grey;
   text-align: center;
   font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+
+audio {
+  ;
 }
 
 h1 {
