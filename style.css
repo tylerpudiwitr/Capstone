@@ -1,9 +1,10 @@
 * {
   background-color: rgb(45, 45, 45);
   align-content: flex-start;
-  margin: 7px;
-  padding: 1px;
+  margin: 0px;
+  padding: 0px;
   box-sizing:border-box;
+  font-family: "Poppins";
 }
 
 .jumbotron > h2 {
@@ -32,6 +33,71 @@ figcaption {
 body {
   align-items: center;
   height: 25px;
+  background-color: darkslateblue;
+}
+
+.wrapper {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.container {
+  background-color: #ff4da6;
+  float: right;
+  height: 25px;
+  width: 40px;
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+}
+
+.menulogo {
+  height: 3px;
+  width: 30px;
+  background-color: azure;
+}
+
+.menu {
+  background-color: gray;
+  padding: 50px;
+  width: 50%;
+  height: 100vh;
+  transform: translateX(0px);
+}
+
+.menu li {
+  list-style-type: none;
+  border-bottom: 1.5px solid black;
+  padding: 30px 0;
+  text-align: center;
+}
+
+.menu li:last-child {
+  border-bottom: none;
+}
+
+.menu li:first-child {
+  font-weight: bold;
+}
+
+.menu li a {
+  color: azure;
+  text-decoration: none;
+  font-size: 20px;
+  transform: font-weight 0.2s;
+}
+
+.menu li a:hover {
+  font-weight: bold;
+}
+
+@media screen and (min-width: 1000px) {
+  .menu{
+    width: 500px;
+  }
 }
 
 p {
@@ -96,6 +162,7 @@ footer {
   .hidden--mobile {
     display: none !important;
   }
+
 
 
 
