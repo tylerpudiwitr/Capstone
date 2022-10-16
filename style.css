@@ -1,8 +1,10 @@
 * {
   background-color: rgb(45, 45, 45);
   align-content: flex-start;
-  margin: 7px;
-  padding: 1px;
+  margin: 0px;
+  padding: 0px;
+  box-sizing:border-box;
+  font-family: "Poppins";
 }
 
 .jumbotron > h2 {
@@ -20,9 +22,7 @@
 
 figcaption {
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-  background-color: gray;
-  columns: 3;
-  padding: 5px;
+  padding: 10px;
   text-decoration: double;
   color: antiquewhite;
   font-variant: small-caps;
@@ -32,6 +32,82 @@ figcaption {
 body {
   align-items: center;
   height: 25px;
+  background-color: darkslateblue;
+}
+
+.wrapper {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.container {
+  background-color: rgb(45, 45, 45);
+  float: right;
+  height: 25px;
+  width: 40px;
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+}
+
+.menulogo {
+  height: 3px;
+  width: 30px;
+  background-color: azure;
+}
+
+.menu {
+  background-color: gray;
+  padding: 20px;
+  width: 50%;
+  height: 45vh;
+  transform: translateX(-500px);
+  transition: 0.5s;
+}
+
+.menu li {
+  list-style-type: none;
+  border-bottom: 1.5px solid black;
+  padding: 30px 0;
+  text-align: center;
+}
+
+.showmenu {
+  transform: translateX(0);
+}
+
+.menu li:last-child {
+  border-bottom: none;
+}
+
+.menu li:first-child {
+  font-weight: bold;
+}
+
+.menu li a {
+  color: azure;
+  text-decoration: none;
+  font-size: 20px;
+  transform: font-weight 0.2s;
+}
+
+.menu li a:hover {
+  font-weight: bold;
+}
+
+@media screen and (min-width: 1000px) {
+  .menu{
+    width: 500px;
+  }
+}
+
+@media screen and (max-width:600px) {
+  .menu li a{
+    font-size: 16px;
+  }
 }
 
 p {
@@ -43,8 +119,15 @@ p {
   font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
 }
 
-audio {
-  ;
+audio  {
+  background: #111;
+  border-radius: 5px;
+  padding: 5px;
+  color: #fff;
+  display: flex;
+  justify-content: right;
+  position: relative;
+  margin: 0 0 25px;
 }
 
 h1 {
@@ -58,12 +141,11 @@ h1 {
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   color: aliceblue;
   text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
-
 }
 .header-image {
   background-image: url("https://img.peerspace.com/image/upload/c_crop,g_custom/g_auto,c_fill,q_auto:eco,f_auto,fl_progressive:steep,w_1200,h_495/cu7tsw2wqbabdyigrq0d");
-  height: 200px;
-  width: 1350px;
+  height: 480px;
+  width: 1515px;
   align-self: stretch;
 }
 h3 {
@@ -81,14 +163,16 @@ footer {
   padding: 10px;
   background-color: lightslategray;
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-  text-align: right;
+  text-align: center;
   font-weight: bold;
+  color: aliceblue;
 }
 
 @media (max-width: 549px){
   .hidden--mobile {
     display: none !important;
   }
+
 
 
 
