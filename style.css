@@ -3,6 +3,7 @@
   align-content: flex-start;
   margin: 7px;
   padding: 1px;
+  box-sizing:border-box;
 }
 
 .jumbotron > h2 {
@@ -21,8 +22,7 @@
 figcaption {
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   background-color: gray;
-  columns: 3;
-  padding: 5px;
+  padding: 10px;
   text-decoration: double;
   color: antiquewhite;
   font-variant: small-caps;
@@ -43,8 +43,15 @@ p {
   font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
 }
 
-audio {
-  ;
+audio  {
+  background: #111;
+  border-radius: 5px;
+  padding: 5px;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  position: relative;
+  margin: 0 0 25px;
 }
 
 h1 {
