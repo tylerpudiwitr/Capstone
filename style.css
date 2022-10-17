@@ -22,7 +22,8 @@
 
 figcaption {
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-  padding: 10px;
+  padding: 20px;
+  background-color: #111;
   text-decoration: double;
   color: antiquewhite;
   font-variant: small-caps;
@@ -41,7 +42,7 @@ body {
 }
 
 .container {
-  background-color: rgb(45, 45, 45);
+  background-color: black;
   float: right;
   height: 25px;
   width: 40px;
@@ -60,12 +61,13 @@ body {
 }
 
 .menu {
-  background-color: gray;
-  padding: 20px;
-  width: 50%;
-  height: 45vh;
-  transform: translateX(-500px);
-  transition: 0.5s;
+background-color: black;
+  padding: 5px;
+  box-sizing: border-box;
+  width: 60%;
+  height: 2vh;
+  transform: translateX(850px) translateY(-1100px);
+  transition: 0.2s;
 }
 
 .menu li {
@@ -76,7 +78,7 @@ body {
 }
 
 .showmenu {
-  transform: translateX(0);
+  transform: translateX(850px) translateY(-400px);
 }
 
 .menu li:last-child {
@@ -119,13 +121,12 @@ p {
   font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
 }
 
-audio  {
+.audio-player  {
   background: #111;
   border-radius: 5px;
   padding: 5px;
   color: #fff;
   display: flex;
-  justify-content: right;
   position: relative;
   margin: 0 0 25px;
 }
@@ -144,7 +145,7 @@ h1 {
 }
 .header-image {
   background-image: url("https://img.peerspace.com/image/upload/c_crop,g_custom/g_auto,c_fill,q_auto:eco,f_auto,fl_progressive:steep,w_1200,h_495/cu7tsw2wqbabdyigrq0d");
-  height: 480px;
+  height: 350px;
   width: 1515px;
   align-self: stretch;
 }
@@ -160,12 +161,18 @@ h3 {
   font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
 }
 footer {
-  padding: 10px;
-  background-color: lightslategray;
+  padding: 30px;
+  background-color: black;
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-  text-align: center;
+  text-align: right;
   font-weight: bold;
   color: aliceblue;
+}
+
+.footer-image {
+  background-image: url("https://miro.medium.com/max/1400/1*gcPA3G1_gWp5nD1VEo8n4g.png");
+  height: 200px;
+  width: 1518px;
 }
 
 @media (max-width: 549px){
