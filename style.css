@@ -62,11 +62,12 @@ body {
 
 .menu {
 background-color: black;
-  padding: 3px;
+  padding: 5px;
+  box-sizing: border-box;
   width: 60%;
-  height: 30vh;
-  transform: translateX(-500px);
-  transition: 0.3s;
+  height: 2vh;
+  transform: translateX(850px) translateY(-1100px);
+  transition: 0.2s;
 }
 
 .menu li {
@@ -77,7 +78,7 @@ background-color: black;
 }
 
 .showmenu {
-  transform: translateX(1000px) translateY(-60px);
+  transform: translateX(850px) translateY(-400px);
 }
 
 .menu li:last-child {
