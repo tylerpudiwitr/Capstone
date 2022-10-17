@@ -66,7 +66,7 @@ background-color: black;
   box-sizing: border-box;
   width: 60%;
   height: 2vh;
-  transform: translateX(850px) translateY(-1100px);
+  transform: translateX(907px) translateY(-1100px);
   transition: 0.2s;
 }
 
@@ -78,7 +78,7 @@ background-color: black;
 }
 
 .showmenu {
-  transform: translateX(850px) translateY(-400px);
+  transform: translateX(907px) translateY(-400px);
 }
 
 .menu li:last-child {
@@ -145,8 +145,8 @@ h1 {
 }
 .header-image {
   background-image: url("https://img.peerspace.com/image/upload/c_crop,g_custom/g_auto,c_fill,q_auto:eco,f_auto,fl_progressive:steep,w_1200,h_495/cu7tsw2wqbabdyigrq0d");
-  height: 350px;
-  width: 1515px;
+  height: 320px;
+  width: 1533px;
   align-self: stretch;
 }
 h3 {
@@ -171,8 +171,10 @@ footer {
 
 .footer-image {
   background-image: url("https://miro.medium.com/max/1400/1*gcPA3G1_gWp5nD1VEo8n4g.png");
-  height: 200px;
-  width: 1518px;
+  height: 150px;
+  width: 1535px;
+  background-color: #111;
+  padding: 5px;
 }
 
 @media (max-width: 549px){
