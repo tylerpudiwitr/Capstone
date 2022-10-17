@@ -22,9 +22,8 @@
 
 figcaption {
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-  padding: 20px;
+  padding: 30px;
   background-color: #111;
-  text-decoration: double;
   color: antiquewhite;
   font-variant: small-caps;
   font-size: larger;
@@ -62,7 +61,7 @@ body {
 
 .menu {
 background-color: black;
-  padding: 5px;
+  padding: 10px;
   box-sizing: border-box;
   width: 60%;
   height: 2vh;
@@ -72,7 +71,7 @@ background-color: black;
 
 .menu li {
   list-style-type: none;
-  border-bottom: 1.5px solid black;
+  border-bottom: 1.8px solid black;
   padding: 30px 0;
   text-align: center;
 }
@@ -121,9 +120,6 @@ p {
   font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
 }
 
-.audio-player  {
-
-}
 
 h1 {
   margin: 2px;
