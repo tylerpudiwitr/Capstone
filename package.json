@@ -12,8 +12,6 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "@parcel/packager-raw-url": "^2.7.0",
-    "@parcel/transformer-jsonld": "^2.7.0",
     "buffer": "^6.0.3",
     "eslint": "^6.8.0",
     "eslint-config-prettier": "^6.15.0",
@@ -34,6 +32,7 @@
     "navigo": "^8.11.1",
     "nodemon": "^2.0.20",
     "parcel": "^2.7.0",
+    "react-plotly": "^1.0.0",
     "soundcloud-key-fetch": "^1.0.13",
     "yargs-parser": ">=13.1.2"
   }
