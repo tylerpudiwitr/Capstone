@@ -61,11 +61,11 @@ a{
   transition: all 0.3s ease-in-out;
   background-color: #e6f9ff;
 }
-
+/*
 @media(max-width:768px) {
   .hamburger {
     display:block;
-  }
+  } */
 
   .hamburger.active .bar:nth-child(2){
     opacity: 0;
