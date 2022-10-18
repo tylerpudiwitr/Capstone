@@ -5,10 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>inTune</title>
     <link rel="stylesheet" href="style.css">
+    <script defer src="./Form/script.js"></script>
   </head>
 <header>
-  <header></header>
-<div>
+  <body>
   <h1 class="header-image">inTU​​NE</h1>
 </div>
     <nav class="navbar">
@@ -36,7 +36,7 @@
   <span class="bar"></span>
   <span class="bar"></span>
 </div>
-<script src="script.js"></script>
+
 </nav>
 </header>
 
@@ -66,6 +66,18 @@
     <li><a href="#">Mixing/Mastering Your Song</a></li>
     <li><a href="#">Contact Us</a></li>
   </ul>
+<div id="error"></div>
+  <form action="/" method="GET">
+    <div>
+      <label for="name">Name</label>
+      <input id="name" name="name" type="text" required>
+    </div>
+    <div>
+      <label for="password">Password</label>
+      <input id="password" name="password" type="password">
+    </div>
+    <button type="submit">Submit</button>
+  </form>
 
   <div class="footer-image"></div>
 
