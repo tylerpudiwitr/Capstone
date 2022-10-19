@@ -2,9 +2,8 @@ import { Header, Nav, Main, Footer } from "./Components";
 import * as store from "./store";
 import Navigo from "navigo";
 import { capitalize } from "lodash";
-import dotenv from "dotenv";
+
 import axios from "axios";
-dotenv.config();
 
 const router = new Navigo("/");
 
@@ -67,18 +66,7 @@ router.hooks({
             done();
           });
         break;
-      case "Pizza":
-        axios
-          .get(`${process.env.PIZZA_PLACE_API_URL}`)
-          .then(response => {
-            store.Pizza.pizzas = response.data;
-            done();
-          })
-          .catch(error => {
-            console.log("It puked", error);
-            done();
-          });
-        break;
+
       default:
         done();
     }
