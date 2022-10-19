@@ -1,14 +1,14 @@
 * {
   background-color: black;
   align-content: flex-start;
-  margin: 0px;
+  margin: 1px;
   padding: 0px;
   box-sizing:border-box;
   font-family: "Poppins";
 }
 
 nav {
-  columns: 3;
+  columns: 4;
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
@@ -23,6 +23,7 @@ a{
 
 img  {
 display: flex;
+height: 500px;
 }
 
 .navbar {
@@ -68,7 +69,7 @@ display: flex;
 }
 
 form {
-  background-color: gray;
+  background-color: black;
 }
 
 label {
@@ -304,6 +305,7 @@ footer {
 section {
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   background-color: #111;
+  box-sizing: border-box;
 }
 
 
