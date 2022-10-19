@@ -24,6 +24,7 @@ export default state => html`
       <button type="submit">Submit</button>
     </form>
     <img
+      class="homepage"
       src="https://cdn.mos.cms.futurecdn.net/doXGMAjXPZaCpe9tjkFKsd.jpg"
       alt="studio"
     />
