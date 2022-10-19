@@ -12,7 +12,7 @@ export default state => html`
       bedroom, living room, or even your car!
     </p>
     <div id="error"></div>
-    <form action="/" method="GET">
+    <form action="https://formspree.io/f/xzbwaayo" method="POST">
       <div>
         <label for="name">Name</label>
         <input id="name" name="name" type="text" required />
