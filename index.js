@@ -25,13 +25,6 @@ function afterRender(state) {
   });
 }
 
-const logo = document.querySelector(".container");
-const menu = document.querySelector(".menu");
-
-logo.addEventListener("click", function() {
-  menu.classList.toggle("showmenu");
-});
-
 router.hooks({
   before: (done, params) => {
     const view =
@@ -66,7 +59,6 @@ router.hooks({
             done();
           });
         break;
-
       default:
         done();
     }
