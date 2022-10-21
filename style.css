@@ -28,6 +28,7 @@
 nav {
   text-align: start;
   padding: 15px;
+  order: 1;
   background: black;
   margin: 0 90px;
   cursor: pointer;
