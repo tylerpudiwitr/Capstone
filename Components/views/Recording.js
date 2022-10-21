@@ -14,6 +14,21 @@ export default state => html`
         sound for your track, you will need to download an application on your
         computer/laptop. I recommend either FL Studios, Logic Pro, or Pro Tools.
       </p>
+      <div class="top-container">
+        <form action="convert-mp3" method="POST" id="form">
+          <h3><i class="fa-brands fa-youtube"></i>YouTube 2 MP3 Converter</h3>
+          <h4>Enter Video ID</h4>
+          <div>
+            <input type="text" name="VideoID" placeholder="Video ID" /><button
+              id="convert-btn"
+            >
+              Convert
+            </button>
+          </div>
+        </form>
+      </div>
+      <div class="bottom-container"></div>
+
       <figure>
         <figcaption>You'll be able to make songs like this!</figcaption>
         <audio controls src="./audiomp/MVP.mp3"></audio>

@@ -11,10 +11,10 @@ export default state => html`
       by learning how to do it ourselves. You can record anywhere! In your
       bedroom, living room, or even your car!
     </p>
-    <h3>
+    <h4>
       Reach out to us by entering your full name and email! Response should be
       expected within 24-48 hours!
-    </h3>
+    </h4>
     <div id="error"></div>
     <form action="https://formspree.io/f/xzbwaayo" method="POST">
       <div>

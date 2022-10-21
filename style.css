@@ -26,10 +26,8 @@
 }
 
 nav {
-  column-gap: 600px;
-  columns: 6;
-  order: 1;
-  padding: 20px;
+  text-align: start;
+  padding: 15px;
   background: black;
   margin: 0 90px;
   cursor: pointer;
@@ -140,7 +138,14 @@ button:hover {
   line-height: 75px;
 }
 
-
+h4 {
+  color: #e6f9ff;
+  padding: 30px 5px;
+  background-color: #242323;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-weight: 400;
+  font-size: medium;
+}
 
 
 #jumbotron {
@@ -202,7 +207,15 @@ body {
 }
 
 
+form {
+  color: #e6f9ff;
+  justify-content: center;
+}
 
+label {
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  text-align: center;
+}
 
 .menulogo {
   height: 3px;
@@ -264,7 +277,7 @@ background-color: rgb(53, 47, 95);
 }
 
 p {
-  background-color: rgb(59, 59, 59);
+  background-color: rgb(36, 35, 35);
   color: #e6f9ff;
   padding: 40px;
   margin: 10px;

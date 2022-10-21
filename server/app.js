@@ -3,6 +3,8 @@ const express = require("express");
 const dotenv = require("dotenv");
 const mongoose = require("mongoose");
 const tunes = require("./routers/tunes");
+const fetch = require("node-fetch");
+require("dotenv").config();
 
 dotenv.config();
 
