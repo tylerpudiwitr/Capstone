@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 import html from "html-literal";
 
 export default state => html`
