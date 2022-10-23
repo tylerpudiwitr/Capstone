@@ -24,18 +24,24 @@ function afterRender(state) {
   });
 }
 
-function Cnvrt() {
-  const [song, setSong] = afterRender();
+const options = {
+  method: "GET",
+  url: "https://youtube-mp3-download1.p.rapidapi.com/dl",
+  params: { id: "bHDWrnlIqfQ" },
+  headers: {
+    "X-RapidAPI-Key": "a45de08d4cmsh3d2ce67140739c6p1c950ajsn00a6e7b6b5f6",
+    "X-RapidAPI-Host": "youtube-mp3-download1.p.rapidapi.com"
+  }
+};
 
-  const getSong = () => {
-    axios
-      .get("https://youtube-mp3-download1.p.rapidapi.com/dl")
-      .then(response => {
-        setSong(response.data.setup + " ... " + response.data.link);
-        router.navigate("/Recording");
-      });
-  };
-}
+axios
+  .request(options)
+  .then(function(response) {
+    console.log(response.data);
+  })
+  .catch(function(error) {
+    console.error(error);
+  });
 
 router.hooks({
   before: (done, params) => {
@@ -74,6 +80,7 @@ router.hooks({
     }
   }
 });
+
 router
   .on({
     "/": () => render(),
