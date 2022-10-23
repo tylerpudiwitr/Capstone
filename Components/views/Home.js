@@ -12,7 +12,7 @@ export default state => html`
       <li class="nav-item"><a href="Home">Home</a></li>
       <li class="nav-item"><a href="About">About Us</a></li>
       <li class="nav-item"><a href="Recording">Recording</a></li>
-      <li class="nav-item"><a href="Direction">Direction</a></li>
+      <li class="nav-item"><a href="Mixing">Mixing</a></li>
     </ul>
   </nav>
     <section id="jumbotron"></section>

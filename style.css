@@ -25,15 +25,28 @@
   width: 1200px;
 }
 
+input {
+  color: #000000;
+  background-color: #ffffff;
+  font-size: large;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  text-align: center;
+  margin: 7px;
+}
+
 nav {
   text-align: start;
-  padding: 15px;
+  padding: 30px;
+  columns: 4;
+  column-gap: 35px;
+  text-align: center;
   order: 1;
   background: black;
   margin: 0 90px;
   cursor: pointer;
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
+
 
 .nav-list {
   display: flex;
@@ -100,6 +113,13 @@ nav {
   transition: .5s;
 }
 
+#form button:hover{
+  color:white;
+  background-color:  red;
+  border: 1px solid  red;
+  transform: scale(1.1);
+}
+
 li {
   list-style: none;
 }
@@ -140,9 +160,8 @@ button:hover {
 }
 
 h4 {
-  color: #e6f9ff;
-  padding: 30px 5px;
-  background-color: #242323;
+  color: #000000;
+  padding: 30px;
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   font-weight: 400;
   font-size: medium;
@@ -195,7 +214,6 @@ header {
 figcaption {
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   padding: 30px;
-  background-color: #111;
   color: antiquewhite;
   font-variant: small-caps;
   font-size: larger;

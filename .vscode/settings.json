@@ -20,6 +20,8 @@
   "workbench.iconTheme": "material-icon-theme",
   "workbench.view.alwaysShowHeaderActions": true,
   "cSpell.words": [
-    "audiomp"
+    "audiomp",
+    "tokenresponse",
+    "trackresponse"
   ]
 }

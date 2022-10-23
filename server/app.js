@@ -4,6 +4,7 @@ const dotenv = require("dotenv");
 const mongoose = require("mongoose");
 const tunes = require("./routers/tunes");
 const fetch = require("node-fetch");
+
 require("dotenv").config();
 
 dotenv.config();
@@ -55,6 +56,41 @@ app.get("/status", (request, response) => {
 app.get("/echo/:input", (request, response) => {
   const message = request.params.input;
   response.status(418).json({ echo: message });
+});
+
+// eslint-disable-next-line no-undef
+app.post("/convert-mp3", async (req, res) => {
+  const videoId = req.body.videoID;
+  if (videoId === undefined || videoId === "" || videoId === null) {
+    return res.render("Convert", {
+      success: false,
+      message: "Please enter the video ID"
+    });
+  } else {
+    const fetchAPI = await fetch(
+      `https://youtube-mp3-download1.p.rapidapi.com/dl?id=${videoId}`,
+      {
+        method: "GET",
+        headers: {
+          "x-rapidapi-key": process.env.API_Key,
+          "x-rapidapi-host": process.env.API_Host
+        }
+      }
+    );
+    const fetchResponse = await fetchAPI.json();
+
+    if (fetchResponse.status === "ok")
+      return res.render("Convert", {
+        success: true,
+        song_title: fetchResponse.title,
+        song_link: fetchResponse.link
+      });
+    else
+      return res.render("Convert", {
+        success: false,
+        message: fetchResponse.msg
+      });
+  }
 });
 
 const PORT = process.env.PORT || 4040; // we use || to provide a default value
