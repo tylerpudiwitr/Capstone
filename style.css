@@ -324,11 +324,11 @@ h1 {
 h3 {
   margin: auto;
   color: aliceblue;
-  padding: 20px;
+  padding: 2px 20px 0;
   text-shadow: 0 0 60px #fff, 0 0 7px #e6f9ff, 0 0 200px #ffffff;
   text-decoration: underline;
   font-style: oblique;
-  text-align: center;
+  text-align: start;
   font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
 }
 footer {

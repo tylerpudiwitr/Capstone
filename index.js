@@ -24,6 +24,19 @@ function afterRender(state) {
   });
 }
 
+function Cnvrt() {
+  const [song, setSong] = afterRender();
+
+  const getSong = () => {
+    axios
+      .get("https://youtube-mp3-download1.p.rapidapi.com/dl")
+      .then(response => {
+        setSong(response.data.setup + " ... " + response.data.link);
+        router.navigate("/Recording");
+      });
+  };
+}
+
 router.hooks({
   before: (done, params) => {
     const view =

@@ -19,6 +19,7 @@ export default state => html`
     <div id="error"></div>
     <form action="https://formspree.io/f/xzbwaayo" method="POST">
       <div>
+        <h3>ENTER YOUR NAME AND EMAIL SO WE CAN REACH OUT!</h3>
         <label for="name">Name</label>
         <input id="name" name="name" type="text" required />
       </div>

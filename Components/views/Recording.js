@@ -2,7 +2,6 @@
 import html from "html-literal";
 
 export default state => html`
-  <link src="converter.js" />
   <body>
     <section id="recording">
       <h2>Actually Recording Your Vocals</h2>
@@ -30,13 +29,8 @@ export default state => html`
         </form>
       </div>
       <div class="bottom-container">
-        <% if(typeof success != "undefined" && success) { %>
         <div class="success">
-          <p>song_title</p>
-          <a href=<"%= song_link %"><button id="download-btn">Download</button>
-        </div>
-        <div class="errors">
-          <p><%= message %></p>
+          <button id="download-btn">Download</button>
         </div>
       </div>
 
