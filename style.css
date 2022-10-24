@@ -181,7 +181,6 @@ label {
   text-align: center;
   font-size: 17px;
   padding: 7px 90px 0 0;
-
   line-height: 70px;
 
 }
@@ -200,7 +199,7 @@ p {
   color: #e6f9ff;
   padding: 40px;
   margin: 10px;
-  border: 1px solid grey;
+  border: 1px solid rgb(128, 128, 128);
   text-align: center;
   font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
 }

@@ -23,33 +23,33 @@ function afterRender(state) {
     document.querySelector("nav > ul").classList.toggle("hidden--mobile");
   });
   if (state.view === "Recording") {
-    document.querySelector("form").addEventListener("download", event => {
+    document.querySelector("form").addEventListener("submit", event => {
       event.preventDefault();
 
-      const SongInput = event.target.link;
+      const SongInput = event.target.VideoID;
       console.log("SongInput", SongInput);
+      const options = {
+        method: "GET",
+        url: "https://youtube-mp36.p.rapidapi.com/dl",
+        params: { id: SongInput },
+        headers: {
+          "X-RapidAPI-Key":
+            "a45de08d4cmsh3d2ce67140739c6p1c950ajsn00a6e7b6b5f6",
+          "X-RapidAPI-Host": "youtube-mp36.p.rapidapi.com"
+        }
+      };
+
+      axios
+        .request(options)
+        .then(function(response) {
+          console.log(response.data);
+        })
+        .catch(function(error) {
+          console.error(error);
+        });
     });
   }
 }
-
-const options = {
-  method: "GET",
-  url: "https://youtube-mp36.p.rapidapi.com/dl",
-  params: { id: "mbbq2gnOcQo" },
-  headers: {
-    "X-RapidAPI-Key": "a45de08d4cmsh3d2ce67140739c6p1c950ajsn00a6e7b6b5f6",
-    "X-RapidAPI-Host": "youtube-mp36.p.rapidapi.com"
-  }
-};
-
-axios
-  .request(options)
-  .then(function(response) {
-    console.log(response.data);
-  })
-  .catch(function(error) {
-    console.error(error);
-  });
 
 router.hooks({
   before: (done, params) => {
@@ -80,18 +80,6 @@ router.hooks({
           })
           .catch(err => {
             console.log(err);
-            done();
-          });
-        break;
-      case "Recording":
-        axios
-          .get(`${process.env.API_Key}/recording`)
-          .then(response => {
-            store.Recording.link = response.data;
-            done();
-          })
-          .catch(error => {
-            console.log("It puked", error);
             done();
           });
         break;

@@ -20,11 +20,8 @@ export default state => html`
           <h3><i class="fa-brands fa-youtube"></i>YouTube 2 MP3 Converter</h3>
           <h4>Enter Video ID</h4>
           <div>
-            <input type="text" name="VideoID" placeholder="Video ID" /><button
-              id="convert-btn"
-            >
-              Convert
-            </button>
+            <input type="text" name="VideoID" placeholder="Video ID" />
+            <button type="submit" id="convert-btn">Convert</button>
           </div>
         </form>
       </div>
@@ -34,6 +31,7 @@ export default state => html`
       </figure>
       <audio controls src="./audiomp/MVP.mp3"></audio>
       <img
+        class="levels"
         src="https://miro.medium.com/max/1400/1*gcPA3G1_gWp5nD1VEo8n4g.png"
         alt="me"
       />
