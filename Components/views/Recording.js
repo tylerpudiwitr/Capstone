@@ -28,16 +28,11 @@ export default state => html`
           </div>
         </form>
       </div>
-      <div class="bottom-container">
-        <div class="success">
-          <button id="download-btn">Download</button>
-        </div>
-      </div>
 
       <figure>
         <figcaption>You'll be able to make songs like this!</figcaption>
-        <audio controls src="./audiomp/MVP.mp3"></audio>
       </figure>
+      <audio controls src="./audiomp/MVP.mp3"></audio>
       <img
         src="https://miro.medium.com/max/1400/1*gcPA3G1_gWp5nD1VEo8n4g.png"
         alt="me"

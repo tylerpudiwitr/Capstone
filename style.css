@@ -8,12 +8,6 @@
 
 }
 
-.nav_links {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 30px 10%;
-}
 
 .homepage {
   background-size: cover;
@@ -36,7 +30,7 @@ input {
 
 nav {
   text-align: start;
-  padding: 30px;
+  padding: 40px 10px 0 0;
   columns: 4;
   column-gap: 35px;
   text-align: center;
@@ -48,70 +42,7 @@ nav {
 }
 
 
-.nav-list {
-  display: flex;
-}
 
-.nav-item {
-  cursor: pointer;
-  height: 100%;
-  width: 350px;
-  text-align: center;
-  padding: 0 30px;
-  transition: 0.5s;
-}
-
-.nav-item:hover {
-  background: #ff4da6;
-}
-
-.nav-link {
-  color:#e6f9ff;
-  font-size: 18px;
-  font-weight: 500;
-}
-
-
-.nav-item {
-    padding: 0 20px;
-  }
-
-  @media (max-width: 667px) {
-    nav .nav-list {
-      display: grid;
-      position: absolute;
-      background: #3e3e3e;
-      width: 100%;
-      top: 75px;
-      left: 0;
-      transform: translateY(-100%);
-      z-index: -1;
-      transition: 0.6s;
-    }
-
-
-    .navbar-toggler {
-      display: grid !important;
-    }
-
-
-  }
-
-.navbar-toggler {
-  display: none;
-  height: min-content;
-  margin: 18px -10px 0 0;
-  cursor: pointer;
-}
-
-.navbar-toggler .bar {
-  width: 40px;
-  height: 5px;
-  margin-bottom: 10px;
-  background:rgb(59, 24, 98);
-  border-radius: 10%;
-  transition: .5s;
-}
 
 #form button:hover{
   color:white;
@@ -122,6 +53,7 @@ nav {
 
 li {
   list-style: none;
+  display: none;
 }
 
 a{
@@ -153,10 +85,17 @@ button:hover {
 .navbar {
   min-height: 70px;
   display: flex;
-  justify-content: space-between;
+  justify-content: start;
   padding: 0 24px;
-  height: 75px;
+  height: 5px;
   line-height: 75px;
+  word-spacing: 237px;
+}
+
+
+
+.navbar .menu a:hover {
+  color: #ff7979;
 }
 
 h4 {
@@ -198,9 +137,15 @@ li, a, button {
   font-weight: 500;
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   font-size: 16px;
-  color: #e6f9ff;
+  color: #ffffff;
   text-decoration: none;
 }
+
+a:hover {
+  color: #ff4da6;
+}
+
+
 
 header {
   display: flex;
@@ -221,8 +166,8 @@ figcaption {
 
 body {
   align-items: center;
-  height: 25px;
-  background-color: darkslateblue;
+  height: 15px;
+  background-color: rgb(0, 0, 0);
 }
 
 
@@ -234,66 +179,21 @@ form {
 label {
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   text-align: center;
+  font-size: 17px;
+  padding: 7px 90px 0 0;
+
+  line-height: 70px;
+
 }
 
-.menulogo {
-  height: 3px;
-  width: 30px;
-  background-color: azure;
+
+#toggle {
+  display: none;
+}
+#pageContents {
+  margin: 20px;
 }
 
-.menu {
-background-color: black;
-  padding: 10px;
-  box-sizing: border-box;
-  width: 60%;
-  height: 2vh;
-  transform: translateX(-907px) translateY(-300px);
-  transition: 0.2s;
-}
-
-.menu li {
-  list-style-type: none;
-  border-bottom: 1.8px solid black;
-  padding: 30px 0;
-  text-align: center;
-background-color: rgb(53, 47, 95);
-}
-
-.showmenu {
-  transform: translateX(907px) translateY(-300px);
-}
-
-.menu li:last-child {
-  border-bottom: none;
-}
-
-.menu li:first-child {
-  font-weight: bold;
-}
-
-.menu li a {
-  color: azure;
-  text-decoration: none;
-  font-size: 20px;
-  transform: font-weight 0.2s;
-}
-
-.menu li a:hover {
-  font-weight: bold;
-}
-
-@media screen and (min-width: 1000px) {
-  .menu{
-    width: 500px;
-  }
-}
-
-@media screen and (max-width:600px) {
-  .menu li a{
-    font-size: 16px;
-  }
-}
 
 p {
   background-color: rgb(36, 35, 35);
@@ -320,7 +220,6 @@ h1 {
   text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
 }
 
-
 h3 {
   margin: auto;
   color: aliceblue;
@@ -340,24 +239,29 @@ footer {
   color: aliceblue;
 }
 
-.footer-image {
-  background-image: url("https://miro.medium.com/max/1400/1*gcPA3G1_gWp5nD1VEo8n4g.png");
-  height: 175px;
-  width: auto;
-  background-color: #111;
-  padding: 5px;
-}
 
-@media (max-width: 549px){
-  .hidden--mobile {
-    display: none !important;
-  }
 
 section {
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-  background-color: #111;
+  background-color: rgb(0, 0, 0);
   box-sizing: border-box;
 }
 
 
+@media screen and (min-width: 300px) and (max-width: 667px) {
+  body{color:rgb(144, 135, 206); background-color: rgb(0, 0, 0);}
+  .fa{color: #e6f9ff; margin-right: 0px;}
+  label {display: block; cursor: pointer; width: 26px; float: right;}
+    .menu{text-align: center; width: 100%; display: none; clear: right;}
+    .menu a {width: 160px; display: block; border-bottom: solid 1px black; margin: 0; color:rgb(203, 158, 255); background-color: rgb(38, 38, 38); opacity: 90%;}
+    #toggle:checked + .menu{display: block;} .footer-image {
+      background-image: url("https://miro.medium.com/max/1400/1*gcPA3G1_gWp5nD1VEo8n4g.png");
+      height: 175px;
+      width: auto;
+      background-color: #111;
+      padding: 5px;
+    }
+    .hidden--mobile {
+      display: none !important;
+}
 

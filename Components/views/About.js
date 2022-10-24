@@ -3,6 +3,7 @@ import html from "html-literal";
 
 // eslint-disable-next-line prettier/prettier
 export default state => html`
+  <div id="pageContents"></div>
   <section id="about">
     <h2>About Us/Our Mission</h2>
     <p>
@@ -19,13 +20,13 @@ export default state => html`
     <div id="error"></div>
     <form action="https://formspree.io/f/xzbwaayo" method="POST">
       <div>
-        <h3>ENTER YOUR NAME AND EMAIL SO WE CAN REACH OUT!</h3>
+        <h3>ENTER YOUR NAME</h3>
+        <h3>AND EMAIL SO WE CAN REACH OUT!</h3>
         <label for="name">Name</label>
         <input id="name" name="name" type="text" required />
-      </div>
-      <div>
-        <label for="email">E-mail</label>
-        <input id="email" name="email" type="email" />
+        <div></div>
+        <label for="email">Email</label>
+        <input id="email" name="email" type="email" required />
       </div>
       <button type="submit">Submit</button>
     </form>

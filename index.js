@@ -22,15 +22,23 @@ function afterRender(state) {
   document.querySelector(".fa-bars").addEventListener("click", () => {
     document.querySelector("nav > ul").classList.toggle("hidden--mobile");
   });
+  if (state.view === "Recording") {
+    document.querySelector("form").addEventListener("download", event => {
+      event.preventDefault();
+
+      const SongInput = event.target.link;
+      console.log("SongInput", SongInput);
+    });
+  }
 }
 
 const options = {
   method: "GET",
-  url: "https://youtube-mp3-download1.p.rapidapi.com/dl",
-  params: { id: "bHDWrnlIqfQ" },
+  url: "https://youtube-mp36.p.rapidapi.com/dl",
+  params: { id: "mbbq2gnOcQo" },
   headers: {
     "X-RapidAPI-Key": "a45de08d4cmsh3d2ce67140739c6p1c950ajsn00a6e7b6b5f6",
-    "X-RapidAPI-Host": "youtube-mp3-download1.p.rapidapi.com"
+    "X-RapidAPI-Host": "youtube-mp36.p.rapidapi.com"
   }
 };
 
@@ -72,6 +80,18 @@ router.hooks({
           })
           .catch(err => {
             console.log(err);
+            done();
+          });
+        break;
+      case "Recording":
+        axios
+          .get(`${process.env.API_Key}/recording`)
+          .then(response => {
+            store.Recording.link = response.data;
+            done();
+          })
+          .catch(error => {
+            console.log("It puked", error);
             done();
           });
         break;
