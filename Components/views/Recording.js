@@ -4,7 +4,7 @@ import html from "html-literal";
 export default state => html`
   <body>
     <section id="recording">
-      <h2>Actually Recording Your Vocals</h2>
+      <h3>Actually Recording Your Vocals</h3>
       <p>
         First things first, you will need a microphone and and headphones, and
         either a computer or a smart phone.

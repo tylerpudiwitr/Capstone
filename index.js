@@ -26,16 +26,16 @@ function afterRender(state) {
     document.querySelector("form").addEventListener("submit", event => {
       event.preventDefault();
 
-      const SongInput = event.target.VideoID;
+      const SongInput = event.target.elements.VideoID;
       console.log("SongInput", SongInput);
       const options = {
         method: "GET",
-        url: "https://youtube-mp36.p.rapidapi.com/dl",
-        params: { id: SongInput },
+        url: "https://youtube-mp3-download1.p.rapidapi.com/dl",
+        params: { id: SongInput.value },
         headers: {
           "X-RapidAPI-Key":
             "a45de08d4cmsh3d2ce67140739c6p1c950ajsn00a6e7b6b5f6",
-          "X-RapidAPI-Host": "youtube-mp36.p.rapidapi.com"
+          "X-RapidAPI-Host": "youtube-mp3-download1.p.rapidapi.com"
         }
       };
 

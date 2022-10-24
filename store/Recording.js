@@ -1,4 +1,4 @@
 export default {
-  header: "Recording Your Vocals",
+  header: "Recording",
   view: "Recording"
 };
