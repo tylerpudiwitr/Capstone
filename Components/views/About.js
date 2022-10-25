@@ -30,6 +30,10 @@ export default state => html`
       </div>
       <button type="submit">Submit</button>
     </form>
+    <figure>
+      <figcaption>You'll be able to make songs like this!</figcaption>
+    </figure>
+    <audio controls src="./audiomp/MVP.mp3"></audio>
     <img
       class="homepage"
       src="https://cdn.mos.cms.futurecdn.net/doXGMAjXPZaCpe9tjkFKsd.jpg"

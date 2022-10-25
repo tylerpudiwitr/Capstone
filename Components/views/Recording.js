@@ -23,13 +23,10 @@ export default state => html`
             <input type="text" name="VideoID" placeholder="Video ID" />
             <button type="submit" id="convert-btn">Convert</button>
           </div>
+          <div><button type="download" id="download-btn">Download</button></div>
         </form>
       </div>
 
-      <figure>
-        <figcaption>You'll be able to make songs like this!</figcaption>
-      </figure>
-      <audio controls src="./audiomp/MVP.mp3"></audio>
       <img
         class="levels"
         src="https://miro.medium.com/max/1400/1*gcPA3G1_gWp5nD1VEo8n4g.png"
