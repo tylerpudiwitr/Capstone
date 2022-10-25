@@ -23,9 +23,13 @@ export default state => html`
             <input type="text" name="VideoID" placeholder="Video ID" />
             <button type="submit" id="convert-btn">Convert</button>
           </div>
-          <div><button type="download" id="download-btn">Download</button></div>
         </form>
       </div>
+      ${state.data
+        ? html`
+            <a href="${state.data.link}" target="_blank">Download</a>
+          `
+        : ""};
 
       <img
         class="levels"
