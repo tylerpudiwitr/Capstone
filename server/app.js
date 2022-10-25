@@ -3,6 +3,9 @@ const express = require("express");
 const dotenv = require("dotenv");
 const mongoose = require("mongoose");
 const tunes = require("./routers/tunes");
+const fetch = require("node-fetch");
+
+require("dotenv").config();
 
 dotenv.config();
 
@@ -54,6 +57,8 @@ app.get("/echo/:input", (request, response) => {
   const message = request.params.input;
   response.status(418).json({ echo: message });
 });
+
+// eslint-disable-next-line no-undef
 
 const PORT = process.env.PORT || 4040; // we use || to provide a default value
 

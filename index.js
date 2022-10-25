@@ -2,9 +2,7 @@ import { Header, Nav, Main, Footer } from "./Components";
 import * as store from "./store";
 import Navigo from "navigo";
 import { capitalize } from "lodash";
-import dotenv from "dotenv";
 import axios from "axios";
-dotenv.config();
 
 const router = new Navigo("/");
 
@@ -24,14 +22,34 @@ function afterRender(state) {
   document.querySelector(".fa-bars").addEventListener("click", () => {
     document.querySelector("nav > ul").classList.toggle("hidden--mobile");
   });
+  if (state.view === "Recording") {
+    document.querySelector("form").addEventListener("submit", event => {
+      event.preventDefault();
+
+      const SongInput = event.target.elements.VideoID;
+      console.log("SongInput", SongInput);
+      const options = {
+        method: "GET",
+        url: "https://youtube-mp3-download1.p.rapidapi.com/dl",
+        params: { id: SongInput.value },
+        headers: {
+          "X-RapidAPI-Key":
+            "a45de08d4cmsh3d2ce67140739c6p1c950ajsn00a6e7b6b5f6",
+          "X-RapidAPI-Host": "youtube-mp3-download1.p.rapidapi.com"
+        }
+      };
+
+      axios
+        .request(options)
+        .then(function(response) {
+          console.log(response.data);
+        })
+        .catch(function(error) {
+          console.error(error);
+        });
+    });
+  }
 }
-
-const logo = document.querySelector(".container");
-const menu = document.querySelector(".menu");
-
-logo.addEventListener("click", function() {
-  menu.classList.toggle("showmenu");
-});
 
 router.hooks({
   before: (done, params) => {
@@ -39,8 +57,6 @@ router.hooks({
       params && params.data && params.data.view
         ? capitalize(params.data.view)
         : "Home";
-
-    // Add a switch case statement to handle multiple routes
     switch (view) {
       case "Home":
         axios
@@ -59,23 +75,11 @@ router.hooks({
             store.Home.weather.feelsLike = kelvinToFahrenheit(
               response.data.main.feels_like
             );
-            store.Home.weather.description = response.data.weather[1].main;
+            store.Home.weather.description = response.data.weather[0].main;
             done();
           })
           .catch(err => {
             console.log(err);
-            done();
-          });
-        break;
-      case "Pizza":
-        axios
-          .get(`${process.env.PIZZA_PLACE_API_URL}`)
-          .then(response => {
-            store.Pizza.pizzas = response.data;
-            done();
-          })
-          .catch(error => {
-            console.log("It puked", error);
             done();
           });
         break;
@@ -84,6 +88,7 @@ router.hooks({
     }
   }
 });
+
 router
   .on({
     "/": () => render(),

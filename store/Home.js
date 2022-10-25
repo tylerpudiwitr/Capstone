@@ -1,5 +1,5 @@
 export default {
-  header: "My Home Page",
+  header: "inTUNE",
   view: "Home",
   weather: {}
 };

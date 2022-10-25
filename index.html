@@ -1,49 +1,28 @@
 <!DOCTYPE html>
-<html style="font-size: 16px;" lang="en"><head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>inTune</title>
-    <link rel="stylesheet" href="style.css">
-  </head>
+<html style="font-size: 16px;" lang="en">
 
-<div>
-  <h1 class="header-image">inTU​​NE</h1>
-</div>
-  <div class="wrapper">
-    <div class="container">
-        <div class="menulogo"></div>
-        <div class="menulogo"></div>
-        <div class="menulogo"></div>
-  </div>
-</div>
-<div>
-  <figure>
-    <figcaption>You'll be able to make songs like this!</figcaption>
-    <audio class="audio-player" src="./audiomp/MVP.mp3" controls
-    bar-width="5"
-    bar-gap="2"
-    ></audio>
-  </figure>
-</div>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>inTune</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
 
+<nav class="navbar">
+    <label id="hamburger" for="toggle">&#9389;</label>
+    <input type="checkbox" id="toggle" />
+    <div class="menu">
+      <a href="Home">Home</a> <a href="About">About</a>
+      <a href="Recording">Recording</a> <a href="Mixing">Mixing</a>
+    </div>
+  </nav>
+<div id="root"></div>
 
-  <ul class="menu">
-    <li><a href="#">Home</a></li>
-    <li><a href="#">About Us</a></li>
-    <li><a href="#">Getting Started</a></li>
-    <li><a href="#">Recording Your Vocals</a></li>
-    <li><a href="#">Mixing/Mastering Your Song</a></li>
-    <li><a href="#">Contact Us</a></li>
-  </ul>
+<script type="module" src="index.js"></script>
+<script type="module" src="script.js"></script>
 
-  <div class="footer-image"></div>
+</body>
 
-<footer>
-  CONTACT US ON INSTAGRAM: @ty7err
-</footer>
-    <div id="root"></div>
-    <script type="module" src="index.js"></script>
-
-</body></html>
-
+</html>

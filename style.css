@@ -1,18 +1,130 @@
 * {
-  background-color: rgb(45, 45, 45);
+  background-color: black;
   align-content: flex-start;
   margin: 0px;
   padding: 0px;
   box-sizing:border-box;
   font-family: "Poppins";
+
 }
 
-.jumbotron > h2 {
+
+.homepage {
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: auto;
+  height: 500px;
+  width: 1200px;
+}
+
+input {
+  color: #000000;
+  background-color: #ffffff;
+  font-size: large;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  text-align: center;
+  margin: 7px;
+}
+
+nav {
+  text-align: start;
+  padding: 40px 10px 0 0;
+  columns: 4;
+  column-gap: 35px;
+  text-align: center;
+  order: 1;
+  background: black;
+  margin: 0 90px;
+  cursor: pointer;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+
+
+
+#form button:hover{
+  color:white;
+  background-color:  red;
+  border: 1px solid  red;
+  transform: scale(1.1);
+}
+
+li {
+  list-style: none;
+  display: none;
+}
+
+a{
+  color: #3e3e3e;
+  text-decoration: none;
+}
+
+img  {
+display: flex;
+height: 500px;
+}
+
+
+button {
+  padding: 9px 25px;
+  background-color: darkslateblue;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+  margin-left: 20px;
+}
+
+button:hover {
+  background-color: darkslateblue;
+
+}
+
+.navbar {
+  min-height: 70px;
+  display: flex;
+  justify-content: start;
+  padding: 0 24px;
+  height: 5px;
+  line-height: 75px;
+  word-spacing: 237px;
+}
+
+
+
+.navbar .menu a:hover {
+  color: #ff7979;
+}
+
+h4 {
+  color: #000000;
+  padding: 30px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-weight: 400;
+  font-size: medium;
+}
+
+
+#jumbotron {
+  background: url(https://img.peerspace.com/image/upload/c_crop,g_custom/g_auto,c_fill,q_auto:eco,f_auto,fl_progressive:steep,w_1200,h_495/cu7tsw2wqbabdyigrq0d
+  ) center center no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 70vh;
+}
+
+
+#jumbotron > h2 {
   color: white;
   text-align: center;
 }
 
-.jumbotron > a {
+#jumbotron > a {
   text-decoration: none;
   background-color: white;
   font-size: 1.5em;
@@ -20,11 +132,32 @@
   border-radius: 10px;
 }
 
+li, a, button {
+  font-weight: 500;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-size: 16px;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #ff4da6;
+}
+
+
+
+header {
+  display: flex;
+  background-color: rgb(59, 24, 98);
+  justify-content: flex-start;
+  align-items: center;
+  padding: 30px 10%;
+  height: 160px;
+}
+
 figcaption {
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-  padding: 20px;
-  background-color: #111;
-  text-decoration: double;
+  padding: 30px;
   color: antiquewhite;
   font-variant: small-caps;
   font-size: larger;
@@ -32,109 +165,50 @@ figcaption {
 
 body {
   align-items: center;
-  height: 25px;
-  background-color: darkslateblue;
+  height: 15px;
+  background-color: rgb(0, 0, 0);
 }
 
-.wrapper {
-  width: 90%;
-  margin: 0 auto;
+
+form {
+  color: #e6f9ff;
+  justify-content: center;
 }
 
-.container {
-  background-color: black;
-  float: right;
-  height: 25px;
-  width: 40px;
-  margin-top: 20px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-  cursor: pointer;
-}
-
-.menulogo {
-  height: 3px;
-  width: 30px;
-  background-color: azure;
-}
-
-.menu {
-background-color: black;
-  padding: 5px;
-  box-sizing: border-box;
-  width: 60%;
-  height: 2vh;
-  transform: translateX(850px) translateY(-1100px);
-  transition: 0.2s;
-}
-
-.menu li {
-  list-style-type: none;
-  border-bottom: 1.5px solid black;
-  padding: 30px 0;
+label {
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   text-align: center;
+  font-size: 17px;
+  padding: 7px 90px 0 0;
+  line-height: 70px;
+
 }
 
-.showmenu {
-  transform: translateX(850px) translateY(-400px);
+
+#toggle {
+  display: none;
+}
+#pageContents {
+  margin: 20px;
 }
 
-.menu li:last-child {
-  border-bottom: none;
-}
-
-.menu li:first-child {
-  font-weight: bold;
-}
-
-.menu li a {
-  color: azure;
-  text-decoration: none;
-  font-size: 20px;
-  transform: font-weight 0.2s;
-}
-
-.menu li a:hover {
-  font-weight: bold;
-}
-
-@media screen and (min-width: 1000px) {
-  .menu{
-    width: 500px;
-  }
-}
-
-@media screen and (max-width:600px) {
-  .menu li a{
-    font-size: 16px;
-  }
-}
 
 p {
-  background-color: rgb(231, 218, 250);
-  padding: 60px;
-  margin: 5px;
-  border: 3px solid grey;
+  background-color: rgb(36, 35, 35);
+  color: #e6f9ff;
+  padding: 40px;
+  margin: 10px;
+  border: 1px solid rgb(128, 128, 128);
   text-align: center;
   font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
 }
 
-.audio-player  {
-  background: #111;
-  border-radius: 5px;
-  padding: 5px;
-  color: #fff;
-  display: flex;
-  position: relative;
-  margin: 0 0 25px;
-}
 
 h1 {
   margin: 2px;
   font-weight: bolder;
-  padding: 70px;
+  background-color: rgb(59, 24, 98);
+  padding: 10px;
   text-decoration: underline;
   text-decoration-style: double;
   font-size: 350%;
@@ -143,21 +217,15 @@ h1 {
   color: aliceblue;
   text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
 }
-.header-image {
-  background-image: url("https://img.peerspace.com/image/upload/c_crop,g_custom/g_auto,c_fill,q_auto:eco,f_auto,fl_progressive:steep,w_1200,h_495/cu7tsw2wqbabdyigrq0d");
-  height: 350px;
-  width: 1515px;
-  align-self: stretch;
-}
+
 h3 {
-  margin: 6px;
-  padding: 40px;
-  text-shadow: 0 0 20px #fff, 0 0 20px #ffffff, 0 0 40px #ffffff, 0 0 50px #ffffff, 0 0 60px #ffffff, 0 0 70px #e6f9ff, 0 0 80px #ffffff;
+  margin: auto;
+  color: aliceblue;
+  padding: 2px 20px 0;
+  text-shadow: 0 0 60px #fff, 0 0 7px #e6f9ff, 0 0 200px #ffffff;
   text-decoration: underline;
   font-style: oblique;
-  border: 4px solid grey;
-  text-align: center;
-  background-color: rgb(200, 214, 242);
+  text-align: start;
   font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
 }
 footer {
@@ -169,17 +237,42 @@ footer {
   color: aliceblue;
 }
 
-.footer-image {
-  background-image: url("https://miro.medium.com/max/1400/1*gcPA3G1_gWp5nD1VEo8n4g.png");
-  height: 200px;
-  width: 1518px;
+
+
+section {
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  background-color: rgb(0, 0, 0);
+  box-sizing: border-box;
 }
 
-@media (max-width: 549px){
-  .hidden--mobile {
-    display: none !important;
-  }
 
+@media screen and (min-width: 300px) and (max-width: 667px) {
+  body{color:rgb(144, 135, 206); background-color: rgb(0, 0, 0);}
+  .fa{color: #e6f9ff; margin-right: 0px;}
+  label {display: block; cursor: pointer; width: 26px; float: right;}
+    .menu{text-align: center; width: 100%; display: none; clear: right;}
+    .menu a {width: 160px; display: block; border-bottom: solid 1px black; margin: 0; color:rgb(203, 158, 255); background-color: rgb(38, 38, 38); opacity: 90%;}
+    #toggle:checked + .menu{display: block;} .footer-image {
+      background-image: url("https://miro.medium.com/max/1400/1*gcPA3G1_gWp5nD1VEo8n4g.png");
+      height: 175px;
+      width: auto;
+      background-color: #111;
+      padding: 0;
+    }
+    .levels {
+      background-size: cover;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 30vh;
+      width: 56.2vh;
+    }
 
-
+    p {
+      width: 53.5vh;
+    }
+    .hidden--mobile {
+      display: none !important;
+}
 
