@@ -5,7 +5,7 @@ import html from "html-literal";
 export default state => html`
   <div id="pageContents"></div>
   <div id="about">
-    <h2>About Us/Our Mission</h2>
+    <h2>OUR MISSION</h2>
     <p>
       Our goal is to help out newer upcoming artists, or people that are curious
       about making music, mix and master their own songs. We know that
@@ -28,7 +28,7 @@ export default state => html`
         <label for="email">Email</label>
         <input id="email" name="email" type="email" required />
       </div>
-      <div>
+
       <button type="submit">Submit</button>
     </form>
     <img
