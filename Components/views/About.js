@@ -4,7 +4,7 @@ import html from "html-literal";
 // eslint-disable-next-line prettier/prettier
 export default state => html`
   <div id="pageContents"></div>
-  <section id="about">
+  <div id="about">
     <h2>About Us/Our Mission</h2>
     <p>
       Our goal is to help out newer upcoming artists, or people that are curious
@@ -28,12 +28,9 @@ export default state => html`
         <label for="email">Email</label>
         <input id="email" name="email" type="email" required />
       </div>
+      <div>
       <button type="submit">Submit</button>
     </form>
-    <figure>
-      <figcaption>You'll be able to make songs like this!</figcaption>
-    </figure>
-    <audio controls src="./audiomp/MVP.mp3"></audio>
     <img
       class="homepage"
       src="https://cdn.mos.cms.futurecdn.net/doXGMAjXPZaCpe9tjkFKsd.jpg"
