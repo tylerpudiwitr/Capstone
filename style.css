@@ -9,14 +9,17 @@
 }
 
 
+
 .homepage {
   background-size: cover;
   display: flex;
+  border: 5px solid #0e85a9;
   flex-direction: column;
   justify-content: center;
-  margin: auto;
-  height: 500px;
-  width: 1200px;
+  margin-left: auto;
+  transform: translateY(-600px) translateX(-10px);
+  height: 400px;
+  width: 870px;
 }
 
 input {
@@ -25,7 +28,6 @@ input {
   font-size: large;
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   text-align: center;
-  margin: 7px;
 }
 
 nav {
@@ -78,8 +80,7 @@ button {
 }
 
 button:hover {
-  background-color: darkslateblue;
-
+  background-color: rgb(223, 0, 0);
 }
 
 .navbar {
@@ -115,7 +116,7 @@ h4 {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 70vh;
+  height: 57vh;
 }
 
 
@@ -132,7 +133,7 @@ h4 {
   border-radius: 10px;
 }
 
-li, a, button {
+li, a{
   font-weight: 500;
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   font-size: 16px;
@@ -144,7 +145,14 @@ a:hover {
   color: #ff4da6;
 }
 
-
+button {
+  font-weight: 500;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-size: 16px;
+  margin: 12px;
+  color: #ffffff;
+  text-decoration: none;
+}
 
 header {
   display: flex;
@@ -172,16 +180,16 @@ body {
 
 form {
   color: #e6f9ff;
-  justify-content: center;
+  transform: translateX(-10px);
 }
 
 label {
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   text-align: center;
   font-size: 17px;
-  padding: 7px 90px 0 0;
+  padding: 0px 50px 0 0;
   line-height: 70px;
-
+  margin: 20px;
 }
 
 
@@ -194,11 +202,12 @@ label {
 
 
 p {
-  background-color: rgb(36, 35, 35);
+  background-color: rgb(69, 53, 68);
   color: #e6f9ff;
+  width: 600px;
   padding: 40px;
   margin: 10px;
-  border: 1px solid rgb(128, 128, 128);
+  border: 1px solid rgb(164, 59, 178);
   text-align: center;
   font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
 }
@@ -220,24 +229,46 @@ h1 {
 
 h3 {
   margin: auto;
+  transform: translateX(-220px);
   color: aliceblue;
-  padding: 2px 20px 0;
-  text-shadow: 0 0 60px #fff, 0 0 7px #e6f9ff, 0 0 200px #ffffff;
+  background: none;
+  width: 1000px;
+  padding: 2px 10px 0;
+  text-shadow: 0 0 60px #fff, 0 0 7px #e6f9ff, 0 0 150px #ffffff;
   text-decoration: underline;
-  font-style: oblique;
+
   text-align: start;
   font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
 }
-footer {
-  padding: 30px;
-  background-color: black;
+
+h3.youtube {
+  transform: translateY(50px) translateX(-250px);
+}
+
+h2 {
+  color: #fda4ff;
+  transform: translateX(220px);
+  border: 0.3px solid #fda4ff;
+  width: 150px;
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-  text-align: right;
+}
+
+
+
+footer {
+  background-color: rgb(0, 0, 0);
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  width: 300px;
+  transform: translateX(-50px);
+  margin-left: auto;
   font-weight: bold;
   color: aliceblue;
 }
 
-
+.player {
+  transform: translateX(1180px) translateY(-671px);
+  background: none;
+}
 
 section {
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
@@ -247,9 +278,9 @@ section {
 
 
 @media screen and (min-width: 300px) and (max-width: 667px) {
-  body{color:rgb(144, 135, 206); background-color: rgb(0, 0, 0);}
+  body{text-align: center;color:rgb(144, 135, 206); background-color: rgb(0, 0, 0);}
   .fa{color: #e6f9ff; margin-right: 0px;}
-  label {display: block; cursor: pointer; width: 26px; float: right;}
+  label {display: block; cursor: pointer; width: 35px; height: 30px; float: right;}
     .menu{text-align: center; width: 100%; display: none; clear: right;}
     .menu a {width: 160px; display: block; border-bottom: solid 1px black; margin: 0; color:rgb(203, 158, 255); background-color: rgb(38, 38, 38); opacity: 90%;}
     #toggle:checked + .menu{display: block;} .footer-image {
@@ -268,9 +299,64 @@ section {
       height: 30vh;
       width: 56.2vh;
     }
+    form {
+      transform: translateX(40px);
+      width: 300px;
+      text-align: center;
+      margin-right: auto;
+      align-content: flex-start;
+      justify-content: flex-start;
+      background-color: #000000;
 
+    }
+    input {
+      transform: translateX(-10px);
+      width: 150px;
+    }
+
+    button.convert {
+      transform: translateX(0px) translateY(0px);
+    }
+
+    h2 {
+      transform: translateX(150px);
+    }
+
+    input.vidID {
+      transform: translateX(0px) translateY(0px);
+    }
+
+    h3.youtube {
+      transform: translateX(-60px);
+    }
+
+    h3 {
+      transform: translateX(-40px) translateY(-40px);
+      width: 400px;
+      text-align: center;
+    }
+    label {
+      transform: translateX(-40px) translateY(-37px);
+      padding: 0;
+      background-color: #000000;
+      background: none;
+      text-align: center;
+      align-content: flex-start;
+      justify-content: flex-start;
+      margin-right: auto;
+    }
+    .homepage {
+      display: none;
+    }
+    .player {
+      display: none;
+    }
+    footer {
+      transform: translateX(-130px);
+    }
     p {
       width: 53.5vh;
+      transform: translateX(15px);
     }
     .hidden--mobile {
       display: none !important;
