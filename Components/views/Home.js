@@ -5,7 +5,7 @@ export default state => html`
     <div id="pageContents">
       <section id="jumbotron"></section>
 
-      <p>
+      <p class="weather">
         The weather in ${state.weather.city} is ${state.weather.description}.
         Temperature is ${state.weather.temp}F, and it feels like
         ${state.weather.feelsLike}F.

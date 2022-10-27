@@ -38,7 +38,7 @@ export default state => html`
         ? html`
             <a href="${state.data.link}" target="_blank">Download</a>
           `
-        : ""};
+        : ""}
 
       <img
         class="levels"
