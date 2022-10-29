@@ -22,14 +22,14 @@ export default state => html`
       <div>
         <h3>ENTER YOUR NAME</h3>
         <h3>AND EMAIL SO WE CAN REACH OUT!</h3>
-        <label for="name">Name</label>
+        <label class="names" for="name">Name</label>
         <input id="name" name="name" type="text" required />
         <div></div>
-        <label for="email">Email</label>
+        <label class="mail" for="email">Email</label>
         <input id="email" name="email" type="email" required />
       </div>
 
-      <button type="submit">Submit</button>
+      <button class="sub" type="submit">Submit</button>
     </form>
     <img
       class="homepage"

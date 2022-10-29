@@ -278,11 +278,11 @@ section {
 
 
 @media screen and (min-width: 300px) and (max-width: 667px) {
-  body{text-align: center;color:rgb(144, 135, 206); background-color: rgb(0, 0, 0);}
+  body{text-align: center; color: rgb(144, 135, 206); background-color: rgb(0, 0, 0);}
   .fa{color: #e6f9ff; margin-right: 0px;}
   label {display: block; cursor: pointer; width: 35px; height: 30px; float: right;}
     .menu{text-align: center; width: 100%; display: none; clear: right;}
-    .menu a {width: 160px; display: block; border-bottom: solid 1px black; margin: 0; color:rgb(203, 158, 255); background-color: rgb(38, 38, 38); opacity: 90%;}
+    .menu a {font-size: large; transform: translateX(-20px) translateY(6px); width: 180px; display: block; border-bottom: solid 1px black; margin: 0; color:rgb(222, 192, 255); background-color: rgb(38, 38, 38); opacity: 90%;}
     #toggle:checked + .menu{display: block;} .footer-image {
       background-image: url("https://miro.medium.com/max/1400/1*gcPA3G1_gWp5nD1VEo8n4g.png");
       height: 175px;
@@ -296,8 +296,10 @@ section {
       flex-direction: column;
       justify-content: center;
       align-items: center;
-      height: 30vh;
-      width: 56.2vh;
+      height: 25vh;
+      border: 8px solid black;
+      opacity: 90%;
+      width: 56.5vh;
     }
     form {
       transform: translateX(40px);
@@ -307,8 +309,14 @@ section {
       align-content: flex-start;
       justify-content: flex-start;
       background-color: #000000;
-
     }
+
+    header {
+      text-align: center;
+      font-size: smaller;
+      width: 100%;
+    }
+
     input {
       transform: translateX(-10px);
       width: 150px;
@@ -319,7 +327,17 @@ section {
     }
 
     h2 {
-      transform: translateX(150px);
+      transform: translateX(20px);
+      text-align: start;
+      width: 100px;
+      opacity: 80%;
+      background: none;
+      border: none;
+      font-size: medium;
+    }
+
+    #name {
+      transform: translateX(-37px) translateY(-20px);
     }
 
     input.vidID {
@@ -331,7 +349,7 @@ section {
     }
 
     h3 {
-      transform: translateX(-40px) translateY(-40px);
+      transform: translateX(-50px) translateY(-40px);
       width: 400px;
       text-align: center;
     }
@@ -348,15 +366,33 @@ section {
     .homepage {
       display: none;
     }
+
+    button.sub {
+      transform: translateX(60px);
+    }
+
     .player {
       display: none;
     }
     footer {
-      transform: translateX(-130px);
+      transform: translateX(-40px);
+      font-size: medium;
     }
+
+    label.names {
+      transform: translateX(-65px) translateY(-60px);
+    }
+
+    label.mail {
+      transform: translate(-10px) translateY(-41px);
+    }
+
     p {
-      width: 53.5vh;
-      transform: translateX(15px);
+      width: 338px;
+      transform: translateX(9px);
+    }
+    p.weather {
+      transform: translateX(-12px);
     }
     .hidden--mobile {
       display: none !important;
