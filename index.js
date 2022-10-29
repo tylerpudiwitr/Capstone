@@ -33,9 +33,8 @@ function afterRender(state) {
         url: "https://youtube-mp3-download1.p.rapidapi.com/dl",
         params: { id: SongInput.value },
         headers: {
-          "X-RapidAPI-Key":
-            "a45de08d4cmsh3d2ce67140739c6p1c950ajsn00a6e7b6b5f6",
-          "X-RapidAPI-Host": "youtube-mp3-download1.p.rapidapi.com"
+          "X-RapidAPI-Key": process.env.API_Key,
+          "X-RapidAPI-Host": process.env.API_Host
         }
       };
 
