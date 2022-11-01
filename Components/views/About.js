@@ -13,18 +13,14 @@ export default state => html`
         If you have any questions or comments we hope you reach out to us so we
       can assist you as best as we can! And remember, consistency is the key.
     </h5>
-    <h2>OUR MISSION</h2>
-    <p>
+    <h2 class="mission">OUR MISSION</h2>
+    <p class="goal">
       Our goal is to help out newer upcoming artists, or people that are curious
       about making music, mix and master their own songs. We know that
       professional studio time can be really expensive, so let's cut the costs
       by learning how to do it ourselves. You can record anywhere! In your
       bedroom, living room, or even your car!
     </p>
-    <h4>
-      Reach out to us by entering your full name and email! Response should be
-      expected within 24-48 hours!
-    </h4>
     <div id="error">
     <form action="https://formspree.io/f/xzbwaayo" method="POST">
       <div>
