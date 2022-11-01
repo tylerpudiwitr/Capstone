@@ -51,6 +51,7 @@ img.mastering {
 
 a.labs {
   padding: 50px;
+  background: none;
 }
 
 input {
@@ -458,6 +459,13 @@ label.mail {
       background: none;
     }
 
+    a.labs {
+      padding: 0;
+      text-decoration: underline;
+      line-height: 50px;
+      background: none;
+    }
+
     header {
       text-align: center;
       font-size: smaller;
@@ -466,6 +474,10 @@ label.mail {
 
     h3.fill {
       transform: translateX(0) translateY(-35px);
+    }
+
+    img.mic {
+      display: none;
     }
 
     input {
@@ -551,11 +563,15 @@ label.mail {
     }
 
     h2.vocals {
-      transform: translateX(80px);
-      width: 200px;
+      transform: translateX(10px);
+      width: 150px;
       margin: 0;
       padding: 0;
       text-align: center;
+    }
+
+    h3.mixtitle {
+      display: contents;
     }
 
     h2.mission {
@@ -583,6 +599,14 @@ label.mail {
       height: fit-content;
     }
 
+    img.mixing {
+      display: none;
+    }
+
+    img.mastering {
+      display: none;
+    }
+
     button.sub {
       transform: translateX(0);
     }
@@ -594,6 +618,10 @@ label.mail {
 
     p.master {
       transform: translateX(8.6px) translateY(9px);
+    }
+
+    img.band {
+      transform: translateY(10px) translateX(40px);
     }
 
     label#hamburger {
