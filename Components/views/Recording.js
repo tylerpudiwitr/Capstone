@@ -4,12 +4,12 @@ import html from "html-literal";
 export default state => html`
   <body>
     <section id="recording">
-      <h2>Actually Recording Your Vocals</h2>
-      <p>
+      <h2 class="vocals">Actually Recording Your Vocals</h2>
+      <p class="record">
         First things first, you will need a microphone and and headphones, and
         either a computer or a smart phone.
       </p>
-      <p>
+      <p class="record">
         Thanks to technology today, you can make an entire song on your phone
         with an app called BandLabs. Although if you want a more professional
         sound for your track, you will need to download an application on your
@@ -20,7 +20,7 @@ export default state => html`
           <h3 class="youtube">
             <i class="fa-brands fa-youtube"></i>YouTube 2 MP3 Converter
           </h3>
-          <h4>Enter Video ID</h4>
+          <h4 class="vid">Enter Video ID</h4>
           <div>
             <input
               class="vidID"
@@ -36,7 +36,7 @@ export default state => html`
       </div>
       ${state.data
         ? html`
-            <a href="${state.data.link}" target="_blank">Download</a>
+            <a id="down" href="${state.data.link}" target="_blank">DOWNLOAD</a>
           `
         : ""}
 

@@ -17,8 +17,8 @@
   flex-direction: column;
   justify-content: center;
   margin-left: auto;
-  transform: translateY(-600px) translateX(-10px);
-  height: 400px;
+  transform: translateY(-1150px) translateX(-19px);
+  height: 500px;
   width: 870px;
 }
 
@@ -49,8 +49,7 @@ nav {
 #form button:hover{
   color:white;
   background-color:  red;
-  border: 1px solid  red;
-  transform: scale(1.1);
+  border: 2px solid  red;
 }
 
 li {
@@ -65,9 +64,20 @@ a{
 
 img  {
 display: flex;
-height: 500px;
+border: 20px solid black;
+height: 540px;
+width: 1518px;
 }
 
+p.mix {
+  transform: translateY(70px);
+}
+
+p.master {
+  transform: translateX(400px) translateY(80px);
+  background-color: rgb(116, 70, 122);
+  border:4px solid rgb(91, 131, 175);
+}
 
 button {
   padding: 9px 25px;
@@ -81,6 +91,24 @@ button {
 
 button:hover {
   background-color: rgb(223, 0, 0);
+  border: 2px solid  red;
+}
+
+a#down {
+  justify-content: center;
+  align-self: center;
+  border: 100px solid black;
+  background-color: #425ae6;
+  font-size: x-large;
+  padding: 20px;;
+  text-align: center;
+}
+
+a#down:hover {
+  background-color: rgb(214, 65, 255);
+  border: 2px solid  rgb(214, 65, 255);
+  color: #111;
+  border: 100px solid black;
 }
 
 .navbar {
@@ -107,6 +135,11 @@ h4 {
   font-size: medium;
 }
 
+h4.vid {
+  color: #e6f9ff;
+  background: none;
+  transform: translateX(950px) translateY(-85px);
+}
 
 #jumbotron {
   background: url(https://img.peerspace.com/image/upload/c_crop,g_custom/g_auto,c_fill,q_auto:eco,f_auto,fl_progressive:steep,w_1200,h_495/cu7tsw2wqbabdyigrq0d
@@ -147,8 +180,10 @@ a:hover {
 
 button {
   font-weight: 500;
+  transform: translateX(100px) translateY(70px);
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   font-size: 16px;
+  width: 200px;
   margin: 12px;
   color: #ffffff;
   text-decoration: none;
@@ -174,23 +209,28 @@ figcaption {
 body {
   align-items: center;
   height: 15px;
-  background-color: rgb(0, 0, 0);
+  background:none
 }
 
 
 form {
   color: #e6f9ff;
-  transform: translateX(-10px);
+  transform: translateX(90px) translateY(-250px);
+  width: 400px;
+  padding: 0;
+  background: none;
 }
 
 label {
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   text-align: center;
   font-size: 17px;
+  transform: translateY(-90px);
   padding: 0px 50px 0 0;
   line-height: 70px;
   margin: 20px;
 }
+
 
 
 #toggle {
@@ -198,20 +238,42 @@ label {
 }
 #pageContents {
   margin: 20px;
+
 }
 
 
 p {
   background-color: rgb(69, 53, 68);
   color: #e6f9ff;
+  line-height: 30px;
   width: 600px;
-  padding: 40px;
+  transform: translateY(-270px);
+  padding: 30px;
   margin: 10px;
   border: 1px solid rgb(164, 59, 178);
   text-align: center;
   font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
 }
 
+h5 {
+  color: white;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-size: larger;
+  font-weight: 100;
+  padding: 30px;
+  transform: translateX(750px) translateY(660px);
+  width: 680px;
+  text-align: center;
+  line-height: 35px;
+  outline-style: groove;
+  background-color: #0e85a9;
+}
+
+div #error {
+  background: none;
+  padding: 0%;
+  height: 400px;
+}
 
 h1 {
   margin: 2px;
@@ -227,55 +289,93 @@ h1 {
   text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
 }
 
+h3.youtube {
+  transform: translateY(-100px) translateX(1030px);
+  font-size: larger;
+  background: none;
+  width: 300px;
+}
+
 h3 {
   margin: auto;
-  transform: translateX(-220px);
-  color: aliceblue;
+  transform: translateX(-260px) translateY(-45px);
+  color: rgb(186, 223, 255);
   background: none;
-  width: 1000px;
+  width: 950px;
+  text-align: center;
   padding: 2px 10px 0;
-  text-shadow: 0 0 60px #fff, 0 0 7px #e6f9ff, 0 0 150px #ffffff;
+  text-shadow: 0 0 100px rgb(144, 223, 255), 0 0 17px #98e7ff, 0 0 180px #90e3ff;
   text-decoration: underline;
-
-  text-align: start;
   font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
 }
 
-h3.youtube {
-  transform: translateY(50px) translateX(-250px);
-}
+
 
 h2 {
   color: #fda4ff;
-  transform: translateX(220px);
+  transform: translateX(220px) translateY(-305px);
   border: 0.3px solid #fda4ff;
-  width: 150px;
+  text-align: center;
+  padding: 20px;
+  width: 170px;
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
-
+div {
+  background: none;
+}
 
 footer {
   background-color: rgb(0, 0, 0);
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   width: 300px;
-  transform: translateX(-50px);
+  transform: translateX(-48px);
   margin-left: auto;
   font-weight: bold;
   color: aliceblue;
 }
 
 .player {
-  transform: translateX(1180px) translateY(-671px);
+  transform: translateX(1160px) translateY(-773px);
   background: none;
+  padding: 0;
+}
+
+p.weather {
+  transform: translateY(50px) translateX(290px);
+}
+
+p.record {
+  transform: translateY(90px) translateX(50px);
+  width: 1000px;
+}
+
+h2.vocals {
+  transform: translateY(40px) translateX(290px);
+  width: 400px;
+}
+
+input#question {
+  padding: 50px;
 }
 
 section {
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-  background-color: rgb(0, 0, 0);
+  background: none;
   box-sizing: border-box;
 }
 
+input.vidID {
+  transform: translateX(1107px) translateY(-140px);
+}
+
+button.convert {
+  transform: translateX(1120px) translateY(-100px);
+}
+
+label.mail {
+  background: none;
+}
 
 @media screen and (min-width: 300px) and (max-width: 667px) {
   body{text-align: center; color: rgb(144, 135, 206);}
@@ -308,7 +408,7 @@ section {
       margin-right: auto;
       align-content: flex-start;
       justify-content: flex-start;
-      background-color: #000000;
+      background: none;
     }
 
     header {
@@ -324,6 +424,17 @@ section {
 
     button.convert {
       transform: translateX(0px) translateY(0px);
+    }
+
+    p.record {
+      width: 350px;
+      transform: translateX(3.5px);
+    }
+
+    h4.vid {
+      transform: translateX(0px) translateY(0px);
+      text-decoration: overline;
+      line-height: 7px;
     }
 
     h2 {
@@ -345,7 +456,8 @@ section {
     }
 
     h3.youtube {
-      transform: translateX(-60px);
+      transform: translateX(0px);
+      background: none;
     }
 
     h3 {
@@ -385,6 +497,56 @@ section {
 
     label.mail {
       transform: translate(-10px) translateY(-41px);
+    }
+
+    h2.vocals {
+      transform: translateX(80px);
+      width: 200px;
+      margin: 0;
+      padding: 0;
+      text-align: center;
+    }
+
+    h2.mission {
+      transform: translateY(-540px) translateX(109px);
+      width: 200px;
+    }
+
+    p.goal {
+      transform: translateY(-550px) translateX(9.5px);
+    }
+
+    label.question {
+      transform: translateX(-90px);
+    }
+
+    h3 {
+      width: 300px;
+      transform: translateX(8px) translateY(-35px);
+    }
+
+    h5 {
+      width: 340px;
+      transform: translateX(19px) translateY(390px);
+      font-size: medium;
+      height: fit-content;
+    }
+
+    button.sub {
+      transform: translateX(0);
+    }
+
+    p.mix {
+      transform: translateX(8.5px) translateY(18px);
+      padding: 0;
+    }
+
+    p.master {
+      transform: translateX(8.6px) translateY(9px);
+    }
+
+    label#hamburger {
+      font-size: xx-large;
     }
 
     p {
